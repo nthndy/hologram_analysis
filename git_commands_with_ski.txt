@@ -1,0 +1,607 @@
+nathan@mr-susan:~$ apt-get install git
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+nathan@mr-susan:~$ sudo apt-get install git
+[sudo] password for nathan: 
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following packages were automatically installed and are no longer required:
+  activity-log-manager geoclue geoclue-ubuntu-geoip indicator-applet
+  indicator-bluetooth indicator-datetime indicator-keyboard indicator-messages
+  indicator-power indicator-sound libaccounts-glib0 libfcitx-config4
+  libfcitx-gclient1 libfcitx-utils0 libgeoclue0 libgeonames-common
+  libgeonames0 libido3-0.1-0 liblightdm-gobject-1-0 libnm-glib4 libnm-gtk0
+  libnm-util2 libpanel-applet3 libtimezonemap-data libtimezonemap1
+  libunity-control-center1 libunity-settings-daemon1 liburl-dispatcher1
+  linux-headers-4.15.0-46 linux-headers-4.15.0-46-generic
+  linux-image-4.15.0-46-generic linux-modules-4.15.0-46-generic
+  linux-modules-extra-4.15.0-46-generic ubuntu-touch-sounds
+  unity-settings-daemon
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-cvs git-mediawiki git-svn
+The following NEW packages will be installed
+  git git-man liberror-perl
+0 to upgrade, 3 to newly install, 0 to remove and 26 not to upgrade.
+Need to get 4,733 kB of archives.
+After this operation, 33.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n] Y
+Get:1 http://gb.archive.ubuntu.com/ubuntu bionic/main amd64 liberror-perl all 0.17025-1 [22.8 kB]
+Get:2 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 git-man all 1:2.17.1-1ubuntu0.4 [803 kB]
+Get:3 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 git amd64 1:2.17.1-1ubuntu0.4 [3,907 kB]
+Fetched 4,733 kB in 0s (11.4 MB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... 201414 files and directories currently installed.)
+Preparing to unpack .../liberror-perl_0.17025-1_all.deb ...
+Unpacking liberror-perl (0.17025-1) ...
+Selecting previously unselected package git-man.
+Preparing to unpack .../git-man_1%3a2.17.1-1ubuntu0.4_all.deb ...
+Unpacking git-man (1:2.17.1-1ubuntu0.4) ...
+Selecting previously unselected package git.
+Preparing to unpack .../git_1%3a2.17.1-1ubuntu0.4_amd64.deb ...
+Unpacking git (1:2.17.1-1ubuntu0.4) ...
+Setting up git-man (1:2.17.1-1ubuntu0.4) ...
+Setting up liberror-perl (0.17025-1) ...
+Processing triggers for man-db (2.8.3-2ubuntu0.1) ...
+Setting up git (1:2.17.1-1ubuntu0.4) ...
+nathan@mr-susan:~$ add-apt-repository ppa:git-core/ppa
+Error: must run as priviledged user
+nathan@mr-susan:~$ sudo add-apt-repository ppa:git-core/ppa
+ The most current stable version of Git for Ubuntu.
+
+For release candidates, go to https://launchpad.net/~git-core/+archive/candidate .
+ More info: https://launchpad.net/~git-core/+archive/ubuntu/ppa
+Press [ENTER] to continue or Ctrl-c to cancel adding it.
+
+Get:1 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic InRelease [20.7 kB]
+Hit:2 http://gb.archive.ubuntu.com/ubuntu bionic InRelease                     
+Get:3 http://gb.archive.ubuntu.com/ubuntu bionic-updates InRelease [88.7 kB]   
+Get:4 http://security.ubuntu.com/ubuntu bionic-security InRelease [88.7 kB]
+Get:5 http://gb.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Ign:6 http://dl.google.com/linux/chrome/deb stable InRelease
+Hit:7 http://dl.google.com/linux/chrome/deb stable Release
+Get:8 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main i386 Packages [503 kB]
+Get:9 http://gb.archive.ubuntu.com/ubuntu bionic-updates/main amd64 Packages [597 kB]
+Get:10 http://gb.archive.ubuntu.com/ubuntu bionic-updates/universe amd64 Packages [931 kB]
+Get:11 http://gb.archive.ubuntu.com/ubuntu bionic-updates/universe i386 Packages [919 kB]
+Get:12 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic/main amd64 Packages [3,024 B]
+Get:13 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic/main i386 Packages [3,036 B]
+Get:14 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic/main Translation-en [2,248 B]
+Fetched 3,231 kB in 1s (3,332 kB/s)                                            
+Reading package lists... Done
+nathan@mr-susan:~$ sudo apt update; apt install git
+Hit:1 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic InRelease
+Hit:2 http://gb.archive.ubuntu.com/ubuntu bionic InRelease                    
+Hit:3 http://gb.archive.ubuntu.com/ubuntu bionic-updates InRelease            
+Get:4 http://gb.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease             
+Ign:6 http://dl.google.com/linux/chrome/deb stable InRelease                   
+Hit:7 http://dl.google.com/linux/chrome/deb stable Release
+Fetched 74.6 kB in 1s (75.0 kB/s)
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+28 packages can be upgraded. Run 'apt list --upgradable' to see them.
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+nathan@mr-susan:~$ Y
+Y: command not found
+nathan@mr-susan:~$ sudo apt update; apt install git
+Hit:1 http://ppa.launchpad.net/git-core/ppa/ubuntu bionic InRelease
+Hit:2 http://gb.archive.ubuntu.com/ubuntu bionic InRelease          
+Hit:3 http://gb.archive.ubuntu.com/ubuntu bionic-updates InRelease  
+Get:4 http://gb.archive.ubuntu.com/ubuntu bionic-backports InRelease [74.6 kB]
+Hit:5 http://security.ubuntu.com/ubuntu bionic-security InRelease   
+Ign:6 http://dl.google.com/linux/chrome/deb stable InRelease        
+Hit:7 http://dl.google.com/linux/chrome/deb stable Release          
+Fetched 74.6 kB in 1s (77.6 kB/s)                  
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+28 packages can be upgraded. Run 'apt list --upgradable' to see them.
+E: Could not open lock file /var/lib/dpkg/lock-frontend - open (13: Permission denied)
+E: Unable to acquire the dpkg frontend lock (/var/lib/dpkg/lock-frontend), are you root?
+nathan@mr-susan:~$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialise an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+nathan@mr-susan:~$ ls
+analysis  Documents         Fiji.app        Music     snap
+data      Downloads         java.log.16967  Pictures  Templates
+Desktop   examples.desktop  ml_tutor        Public    Videos
+nathan@mr-susan:~$ cd analysis
+nathan@mr-susan:~/analysis$ ls
+annas_expt_info  plug_ins             quantifying_sandbox_repo
+jobs_queue       quantifying_sandbox  training_data
+nathan@mr-susan:~/analysis$ cd quantifying_sandbox_repo/
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ git init
+Reinitialised existing Git repository in /home/nathan/analysis/quantifying_sandbox_repo/.git/
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ cd ../
+nathan@mr-susan:~/analysis$ git init
+Initialised empty Git repository in /home/nathan/analysis/.git/
+nathan@mr-susan:~/analysis$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.DS_Store
+	annas_expt_info/
+	jobs_queue/
+	plug_ins/
+	quantifying_sandbox/
+	quantifying_sandbox_repo/
+	training_data/
+
+nothing added to commit but untracked files present (use "git add" to track)
+nathan@mr-susan:~/analysis$ ;s
+bash: syntax error near unexpected token `;'
+nathan@mr-susan:~/analysis$ l
+annas_expt_info/  plug_ins/             quantifying_sandbox_repo/
+jobs_queue/       quantifying_sandbox/  training_data/
+nathan@mr-susan:~/analysis$ cd quantifying_sandbox_repo/
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ ls
+all_opd_using_tracks.m  README.md
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ git add README.md
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ git status
+On branch master
+nothing to commit, working tree clean
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ ls
+all_opd_using_tracks.m  README.md
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ cd ./
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ ;s
+bash: syntax error near unexpected token `;'
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ pwd
+/home/nathan/analysis/quantifying_sandbox_repo
+nathan@mr-susan:~/analysis/quantifying_sandbox_repo$ cd ../
+nathan@mr-susan:~/analysis$ ls
+annas_expt_info    jobs_queue  quantifying_sandbox       training_data
+hologram_analysis  plug_ins    quantifying_sandbox_repo
+nathan@mr-susan:~/analysis$ cd hologram_analysis/
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+nothing to commit, working tree clean
+nathan@mr-susan:~/analysis/hologram_analysis$ mkdir matlab
+nathan@mr-susan:~/analysis/hologram_analysis$ mkdir python
+nathan@mr-susan:~/analysis/hologram_analysis$ ls
+all_opd_using_tracks.m          FRAME_TEST.M        scrapbook.m
+alternate_opd_using_tracks.m    matlab              segmented_image_numbering.m
+archive_all_opd_using_tracks.m  opd_analysis.m      single_cell_opd.m
+cheat_sheet.m                   opd_using_tracks.m  tidy_all_opd_using_tracks.m
+cheat_sheet.mat                 python
+nathan@mr-susan:~/analysis/hologram_analysis$ rm -rf python
+nathan@mr-susan:~/analysis/hologram_analysis$ rm -rf matlab
+nathan@mr-susan:~/analysis/hologram_analysis$ mv ./* matlab
+mv: target 'matlab' is not a directory
+nathan@mr-susan:~/analysis/hologram_analysis$ mkdir matlab
+nathan@mr-susan:~/analysis/hologram_analysis$ mv ./* matlab
+mv: cannot move './matlab' to a subdirectory of itself, 'matlab/matlab'
+nathan@mr-susan:~/analysis/hologram_analysis$ open .
+Couldn't get a file descriptor referring to the console
+nathan@mr-susan:~/analysis/hologram_analysis$ mkdir pythonn
+nathan@mr-susan:~/analysis/hologram_analysis$ rm -rf pythonn
+nathan@mr-susan:~/analysis/hologram_analysis$ mkdir python
+nathan@mr-susan:~/analysis/hologram_analysis$ ls
+matlab  python
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    FRAME_TEST.M
+	deleted:    all_opd_using_tracks.m
+	deleted:    alternate_opd_using_tracks.m
+	deleted:    archive_all_opd_using_tracks.m
+	deleted:    cheat_sheet.m
+	deleted:    cheat_sheet.mat
+	deleted:    opd_analysis.m
+	deleted:    opd_using_tracks.m
+	deleted:    scrapbook.m
+	deleted:    segmented_image_numbering.m
+	deleted:    single_cell_opd.m
+	deleted:    tidy_all_opd_using_tracks.m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	matlab/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nathan@mr-susan:~/analysis/hologram_analysis$ git add matlab
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   matlab/FRAME_TEST.M
+	new file:   matlab/all_opd_using_tracks.m
+	new file:   matlab/alternate_opd_using_tracks.m
+	new file:   matlab/archive_all_opd_using_tracks.m
+	new file:   matlab/cheat_sheet.m
+	new file:   matlab/cheat_sheet.mat
+	new file:   matlab/opd_analysis.m
+	new file:   matlab/opd_using_tracks.m
+	new file:   matlab/scrapbook.m
+	new file:   matlab/segmented_image_numbering.m
+	new file:   matlab/single_cell_opd.m
+	new file:   matlab/tidy_all_opd_using_tracks.m
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    FRAME_TEST.M
+	deleted:    all_opd_using_tracks.m
+	deleted:    alternate_opd_using_tracks.m
+	deleted:    archive_all_opd_using_tracks.m
+	deleted:    cheat_sheet.m
+	deleted:    cheat_sheet.mat
+	deleted:    opd_analysis.m
+	deleted:    opd_using_tracks.m
+	deleted:    scrapbook.m
+	deleted:    segmented_image_numbering.m
+	deleted:    single_cell_opd.m
+	deleted:    tidy_all_opd_using_tracks.m
+
+nathan@mr-susan:~/analysis/hologram_analysis$ git commit
+[ha-1 125b699] Restructuring directories to segregate python and matlab code
+ 12 files changed, 500 insertions(+)
+ create mode 100644 matlab/FRAME_TEST.M
+ create mode 100644 matlab/all_opd_using_tracks.m
+ create mode 100644 matlab/alternate_opd_using_tracks.m
+ create mode 100644 matlab/archive_all_opd_using_tracks.m
+ create mode 100644 matlab/cheat_sheet.m
+ create mode 100644 matlab/cheat_sheet.mat
+ create mode 100644 matlab/opd_analysis.m
+ create mode 100644 matlab/opd_using_tracks.m
+ create mode 100644 matlab/scrapbook.m
+ create mode 100644 matlab/segmented_image_numbering.m
+ create mode 100644 matlab/single_cell_opd.m
+ create mode 100644 matlab/tidy_all_opd_using_tracks.m
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    FRAME_TEST.M
+	deleted:    all_opd_using_tracks.m
+	deleted:    alternate_opd_using_tracks.m
+	deleted:    archive_all_opd_using_tracks.m
+	deleted:    cheat_sheet.m
+	deleted:    cheat_sheet.mat
+	deleted:    opd_analysis.m
+	deleted:    opd_using_tracks.m
+	deleted:    scrapbook.m
+	deleted:    segmented_image_numbering.m
+	deleted:    single_cell_opd.m
+	deleted:    tidy_all_opd_using_tracks.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nathan@mr-susan:~/analysis/hologram_analysis$ git add *
+nathan@mr-susan:~/analysis/hologram_analysis$ git commit
+On branch ha-1
+Changes not staged for commit:
+	deleted:    FRAME_TEST.M
+	deleted:    all_opd_using_tracks.m
+	deleted:    alternate_opd_using_tracks.m
+	deleted:    archive_all_opd_using_tracks.m
+	deleted:    cheat_sheet.m
+	deleted:    cheat_sheet.mat
+	deleted:    opd_analysis.m
+	deleted:    opd_using_tracks.m
+	deleted:    scrapbook.m
+	deleted:    segmented_image_numbering.m
+	deleted:    single_cell_opd.m
+	deleted:    tidy_all_opd_using_tracks.m
+
+no changes added to commit
+nathan@mr-susan:~/analysis/hologram_analysis$ git add ./*
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    FRAME_TEST.M
+	deleted:    all_opd_using_tracks.m
+	deleted:    alternate_opd_using_tracks.m
+	deleted:    archive_all_opd_using_tracks.m
+	deleted:    cheat_sheet.m
+	deleted:    cheat_sheet.mat
+	deleted:    opd_analysis.m
+	deleted:    opd_using_tracks.m
+	deleted:    scrapbook.m
+	deleted:    segmented_image_numbering.m
+	deleted:    single_cell_opd.m
+	deleted:    tidy_all_opd_using_tracks.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nathan@mr-susan:~/analysis/hologram_analysis$ git push
+fatal: The current branch ha-1 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ha-1
+
+nathan@mr-susan:~/analysis/hologram_analysis$ ^C
+nathan@mr-susan:~/analysis/hologram_analysis$ This script pulls pixel values from a holographic image, segments this data as to belonging to a particular (biological) cell in the image (biological cell) 
+bash: syntax error near unexpected token `('
+nathan@mr-susan:~/analysis/hologram_analysis$ git push --set-upstream origin ha-1
+Username for 'https://github.com': nthndy
+Password for 'https://nthndy@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 292 bytes | 292.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ha-1' on GitHub by visiting:
+remote:      https://github.com/nthndy/hologram_analysis/pull/new/ha-1
+remote: 
+To https://github.com/nthndy/hologram_analysis.git
+ * [new branch]      ha-1 -> ha-1
+Branch 'ha-1' set up to track remote branch 'ha-1' from 'origin'.
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Your branch is up-to-date with 'origin/ha-1'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	deleted:    FRAME_TEST.M
+	deleted:    all_opd_using_tracks.m
+	deleted:    alternate_opd_using_tracks.m
+	deleted:    archive_all_opd_using_tracks.m
+	deleted:    cheat_sheet.m
+	deleted:    cheat_sheet.mat
+	deleted:    opd_analysis.m
+	deleted:    opd_using_tracks.m
+	deleted:    scrapbook.m
+	deleted:    segmented_image_numbering.m
+	deleted:    single_cell_opd.m
+	deleted:    tidy_all_opd_using_tracks.m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nathan@mr-susan:~/analysis/hologram_analysis$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+nathan@mr-susan:~/analysis/hologram_analysis$ git add .
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Your branch is up-to-date with 'origin/ha-1'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	deleted:    FRAME_TEST.M
+	deleted:    all_opd_using_tracks.m
+	deleted:    alternate_opd_using_tracks.m
+	deleted:    archive_all_opd_using_tracks.m
+	deleted:    cheat_sheet.m
+	deleted:    cheat_sheet.mat
+	deleted:    opd_analysis.m
+	deleted:    opd_using_tracks.m
+	deleted:    scrapbook.m
+	deleted:    segmented_image_numbering.m
+	deleted:    single_cell_opd.m
+	deleted:    tidy_all_opd_using_tracks.m
+
+nathan@mr-susan:~/analysis/hologram_analysis$ git commit
+Aborting commit due to empty commit message.
+nathan@mr-susan:~/analysis/hologram_analysis$ git commit
+[ha-1 2a01ca1] deleted files in old directory
+ 12 files changed, 500 deletions(-)
+ delete mode 100644 FRAME_TEST.M
+ delete mode 100644 all_opd_using_tracks.m
+ delete mode 100644 alternate_opd_using_tracks.m
+ delete mode 100644 archive_all_opd_using_tracks.m
+ delete mode 100644 cheat_sheet.m
+ delete mode 100644 cheat_sheet.mat
+ delete mode 100644 opd_analysis.m
+ delete mode 100644 opd_using_tracks.m
+ delete mode 100644 scrapbook.m
+ delete mode 100644 segmented_image_numbering.m
+ delete mode 100644 single_cell_opd.m
+ delete mode 100644 tidy_all_opd_using_tracks.m
+nathan@mr-susan:~/analysis/hologram_analysis$ git push
+Username for 'https://github.com': nthndy
+Password for 'https://nthndy@github.com': 
+Counting objects: 2, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (1/1), done.
+Writing objects: 100% (2/2), 235 bytes | 235.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0)
+To https://github.com/nthndy/hologram_analysis.git
+   125b699..2a01ca1  ha-1 -> ha-1
+nathan@mr-susan:~/analysis/hologram_analysis$ ls
+matlab  python
+nathan@mr-susan:~/analysis/hologram_analysis$ git add python
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Your branch is up-to-date with 'origin/ha-1'.
+
+nothing to commit, working tree clean
+nathan@mr-susan:~/analysis/hologram_analysis$ ls
+matlab  python
+nathan@mr-susan:~/analysis/hologram_analysis$ cd python
+nathan@mr-susan:~/analysis/hologram_analysis/python$ cd .
+nathan@mr-susan:~/analysis/hologram_analysis/python$ cd ..
+nathan@mr-susan:~/analysis/hologram_analysis$ lsl
+
+Command 'lsl' not found, did you mean:
+
+  command 'lsd' from snap lsd (0.14.0)
+  command 'lsw' from deb suckless-tools
+  command 'psl' from deb psl
+  command 'ls' from deb coreutils
+  command 'wsl' from deb wsl
+  command 'lsh' from deb lsh-client
+  command 'lsc' from deb livescript
+  command 'sl' from deb sl
+  command 'gsl' from deb generator-scripting-language
+  command 'lsm' from deb lsm
+
+See 'snap info <snapname>' for additional versions.
+
+nathan@mr-susan:~/analysis/hologram_analysis$ ls
+matlab  python
+nathan@mr-susan:~/analysis/hologram_analysis$ mv matlab/
+all_opd_using_tracks.m          opd_analysis.m
+alternate_opd_using_tracks.m    opd_using_tracks.m
+archive_all_opd_using_tracks.m  scrapbook.m
+cheat_sheet.m                   segmented_image_numbering.m
+cheat_sheet.mat                 single_cell_opd.m
+FRAME_TEST.M                    tidy_all_opd_using_tracks.m
+nathan@mr-susan:~/analysis/hologram_analysis$ mv matlab/
+all_opd_using_tracks.m          opd_analysis.m
+alternate_opd_using_tracks.m    opd_using_tracks.m
+archive_all_opd_using_tracks.m  scrapbook.m
+cheat_sheet.m                   segmented_image_numbering.m
+cheat_sheet.mat                 single_cell_opd.m
+FRAME_TEST.M                    tidy_all_opd_using_tracks.m
+nathan@mr-susan:~/analysis/hologram_analysis$ mv matlab/
+all_opd_using_tracks.m          opd_analysis.m
+alternate_opd_using_tracks.m    opd_using_tracks.m
+archive_all_opd_using_tracks.m  scrapbook.m
+cheat_sheet.m                   segmented_image_numbering.m
+cheat_sheet.mat                 single_cell_opd.m
+FRAME_TEST.M                    tidy_all_opd_using_tracks.m
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Your branch is up-to-date with 'origin/ha-1'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	python/
+
+nothing added to commit but untracked files present (use "git add" to track)
+nathan@mr-susan:~/analysis/hologram_analysis$ git add python
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Your branch is up-to-date with 'origin/ha-1'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   python/README.md
+
+nathan@mr-susan:~/analysis/hologram_analysis$ git push
+Username for 'https://github.com': ^X
+Password for 'https://@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/nthndy/hologram_analysis.git/'
+nathan@mr-susan:~/analysis/hologram_analysis$ git commit
+[ha-1 c9ee00c] add python readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 python/README.md
+nathan@mr-susan:~/analysis/hologram_analysis$ git push
+Username for 'https://github.com': nthndy
+Password for 'https://nthndy@github.com': 
+Counting objects: 4, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 345 bytes | 345.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/nthndy/hologram_analysis.git
+   2a01ca1..c9ee00c  ha-1 -> ha-1
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Your branch is up-to-date with 'origin/ha-1'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   python/README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+nathan@mr-susan:~/analysis/hologram_analysis$ git add .
+nathan@mr-susan:~/analysis/hologram_analysis$ git status
+On branch ha-1
+Your branch is up-to-date with 'origin/ha-1'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   python/README.md
+
+nathan@mr-susan:~/analysis/hologram_analysis$ git commit
+[ha-1 8726b7f] just testing ssh key is working
+ 1 file changed, 2 insertions(+)
+nathan@mr-susan:~/analysis/hologram_analysis$ git push
+Username for 'https://github.com': ^C
+nathan@mr-susan:~/analysis/hologram_analysis$ git remote set-url origin git@github.com:nthndy/hologram_analysis.git
+nathan@mr-susan:~/analysis/hologram_analysis$ git push
+The authenticity of host 'github.com (140.82.118.4)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,140.82.118.4' (RSA) to the list of known hosts.
+Counting objects: 4, done.
+Delta compression using up to 12 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 362 bytes | 362.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:nthndy/hologram_analysis.git
+   c9ee00c..8726b7f  ha-1 -> ha-1
+nathan@mr-susan:~/analysis/hologram_analysis$ git push
+Warning: Permanently added the RSA host key for IP address '140.82.118.3' to the list of known hosts.
+Everything up-to-date
+nathan@mr-susan:~/analysis/hologram_analysis$ ls
+matlab  python
+nathan@mr-susan:~/analysis/hologram_analysis$ cd matlab
+nathan@mr-susan:~/analysis/hologram_analysis/matlab$ ls
+all_opd_using_tracks.m          cheat_sheet.mat     scrapbook.m
+alternate_opd_using_tracks.m    FRAME_TEST.M        segmented_image_numbering.m
+archive_all_opd_using_tracks.m  opd_analysis.m      single_cell_opd.m
+cheat_sheet.m                   opd_using_tracks.m  tidy_all_opd_using_tracks.m
+nathan@mr-susan:~/analysis/hologram_analysis/matlab$ ^C
+
