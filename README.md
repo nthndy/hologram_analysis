@@ -1,5 +1,5 @@
 # hologram_analysis
-first ever git repo so be nice - analysis script (originally in matlab) designed to take a holographic microscopy time-lapse image and calculate the dry mass over time of each single cell
+first ever git repo - analysis script (originally in matlab) designed to take a holographic microscopy time-lapse image and calculate the dry mass over time of each single cell
 
 
 This is the first attempt at writing an analysis script for my microscopy (holographic) data set.
